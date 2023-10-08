@@ -1,4 +1,4 @@
-# Working of drowsy_driver_detection
+# Working of Drowsy_Driver_Detection_System(DDDS)
 Our DDDS analyses the captured frames for the sleepiness detection after receiving an input from the colour video camera mounted in front of the driver. The detection system consists of a video camera and software that periodically checks the driver's eye to measure the length of the eye blink. 
 
 Using the Viola Jones face detector from the OpenCV library, we begin by identifying faces. Then, we utilised the STASM library's neural network-based eye detector to find the locations of the pupils. The STASM is a variant of Coote's implementation of the Active Shape Model. From the STASM library, which consists of a collection of neural networks that supply eye locations, we merely deduced the Rowley's eye detection code for real-time speed restrictions.
